@@ -14,7 +14,7 @@ from skimage.metrics import structural_similarity, mean_squared_error
 
 
 # 1
-image = cv2.imread('D:\ImageP\Lab2\sar_1.jpg')
+image = cv2.imread('D:\Image_Processing\Lab1\sar_1.jpg')
 b = image[:, :, 0]
 
 
