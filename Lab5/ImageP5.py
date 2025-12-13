@@ -52,6 +52,14 @@ for i in local_max:
     cv.circle(mask, (rows // 2, cols // 2), r, (0,0))
 
 fshift = dft_shift * mask
+
+# Вывод спектра после удаления шума
+magnitude_spectrum_cleaned = 20*np.log(cv.magnitude(fshift[:,:,0], fshift[:,:,1]))
+plt.figure(figsize=(10,5))
+plt.imshow(magnitude_spectrum_cleaned, cmap='gray')
+plt.title("Спектр после удаления периодического шума")
+plt.show()
+
 img_back = cv.idft(np.fft.ifftshift(fshift))
 img_back = cv.magnitude(img_back[:,:,0], img_back[:,:,1])
 
