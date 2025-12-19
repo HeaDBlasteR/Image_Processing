@@ -3,8 +3,8 @@
 x64/
 09_image_date_in_data_analysis/
 10_texture_analysis/
-face_mask_model.keras/
-best_model.keras/
+TG_Bot/face_mask_model.keras
+TG_Bot/best_model.keras
 x64/Debug
 x64/Release
 [Dd]ebug/
